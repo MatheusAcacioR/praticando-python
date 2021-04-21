@@ -1,0 +1,71 @@
+No terminal ou powershell como administrador executar
+
+- pip install SpeechRecognition 
+
+- pip install pipwin
+
+- pipwin install pyaudio
+
+Instalação do pocketsphinx requer os componentes abaixo antes da sua Instalação (Windowns)
+
+To fix the problem, I downloaded swig for windows
+
+Copy "swig.exe" to the python installation folder (for ex C:/python27)
+
+Open the "swigwin-3.0.12/Lib" folder and copy all "*.swg" files to the "C:/python27/Lib" or equivalent python path
+
+Open "swigwin-3.0.12/Lib/python" and copy all the files to "C:/python27/Lib"
+
+Open the "swigwin-3.0.12/Lib" folder and copy over the typemaps folder to "C:/python27/Lib"
+
+(Also make sure you have Microsoft Visual C++ Compiler for Python installed)
+
+No terminal executar 
+
+- pip install pocketsphinx
+
+
+-----------Modulador de voz e reconhecimento da lingua portuguesa
+
+No terminal instalar
+
+- pip install pyttsx
+
+Baixar os arquivos no site https://hashldash.github.io/pythonNaPratica/sintetizacaoeReconhecimentoSetup.html
+
+extrair o diretorio com os arquivos e abrir o powershell nesse diretorio, rodar o comando
+
+- python setup.py install
+
+- pip install pypiwin32
+
+Baixar e instalar o espeak
+
+Instalar api do google para usar voz do google (gtts - Google Text To Speech)
+
+No terminal rodar o comando
+
+- pip install gtts
+
+
+
+
+Fazer o bot falar
+
+no terminal do python
+
+import pyttsx
+en = pyttsx.init()
+en.say("Hello World")
+en.runAndWait()
+en.setProperty('voice', b'brazil') # Mudar o reconhecimento de voz padrao (Ingles) para portugues
+
+Fazer o bot falar usando a voz do Google
+
+from gtts import gTTS # IMPORTAR API DO GOOGLE
+import subprocess as s # IMPORTAR BIBLI0TECA DE MANIPULAÇÃO DE ARQUIVOS
+voz = gTTS("Hello") # TRANSPILANDO O TEXTO QUE SERA LIDO PELA VOZ
+voz = gTTS("Hello", lang="pt") # (Portugues) TRANSPILANDO O TEXTO QUE SERA LIDO PELA VOZ
+voz.save("voz.mp3") # SALVNDO A TRANSPILAÇÃO EM UM ARQUIVO
+s.call(['vlcplayer', 'voz.mp3']) # EXECUTAR UM ARQUIVO CHAMANDO DOIS PARAMETROS: O PROGRAMA QUE EXECUTARA E O ARQUIVO QUE SERA EXECUTADO
+

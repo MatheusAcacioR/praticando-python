@@ -1,0 +1,16 @@
+- loop while para saber se o usuario digitou alguma base errada
+
+- usuario ira digitar as bases ✔
+
+- percorrer a string de bases se tiver alguma base errada o loop continuara sendo false
+e usuario tem que digitar novamente as bases
+
+- converter a string para caixa alta caso usuario digite base em minusculo ✔
+
+- cortar a string em pedaços para salvar cada base dentro de um array bases ✔
+
+- para cada item (base) do array adicionar a contra base dentro do array contra base ✔
+
+- imprimir o array base e logo em seguida a contra base ✔
+
+strip para tirar os espaços e depois 

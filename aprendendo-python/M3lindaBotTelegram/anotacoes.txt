@@ -1,0 +1,24 @@
+Criar bot para telegram
+
+No terminal instalar a biblioteca de bot do telegram
+
+- pip install telepot
+
+Solicitar chave token no telegram atraves do botFather
+
+Com a chave token disponivel, no terminal do python importar a biblioteca
+
+- import telebot
+
+atribuir a uma variavel o token do bot que sera criado
+
+bot = telebot.Bot("token do bot")
+
+Para testar o envio e recebimento de mensagens, ultilizar metodos
+
+bot.getUpdates() receber mensagens
+bot.sendMessage(id_chat, "mensagem a ser enviada") enviar uma mensagem
+
+--------Implemeação do bot------------------
+
+No diretorio do projeto criar arquivo telegram.py
